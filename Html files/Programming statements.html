@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style data-merge-styles="true"></style><style data-merge-styles="true"></style>
+    <title>Programming statements</title>
+    <script src="index.js"></script>
+    
+</head>
+<body>
+    <h1>Lets see variables</h1>
+    <h2> See what I can do with Variables</h2>
+    <ul>
+        <li>
+            <h3> Internal sum with variables defined</h3>
+            <p id="test1">Here will appear the result</p>
+            <button onclick="letsSeeVariables1()">Test here the variables</button></li>
+        <li>
+            <h3>Value on X</h3>
+            <p id="test2">
+                <script>
+                var x;
+                x = 9;
+                document.getElementById("test2").innerHTML = x;</script>
+                </p>
+        </li>
+        <li>
+            <h3>Multiply value variables defined appart</h3>
+            <p id="test3">
+            <script>
+                var a,b;
+                a = 10;
+                b = 5;
+                document.getElementById("test3").innerHTML = a*b;</script>
+                </p>
+        </li>
+        <li>
+            <h3>Variable with ecuations</h3>
+            <p id="test4">
+            <script>
+                var c,d;
+                c = 10*2;
+                d = c+3;
+                document.getElementById("test4").innerHTML = c+d;</script>
+                </p>
+        </li>
+    </ul>
+<h2> See what I can do with Datatypes</h2>
+    <ul>
+    <li>
+        <h3>Variable on console</h3>
+        <p>See on console</p>
+        <script>
+            var length = 12;
+            var lastName = "Muguerza";
+            var x = {name:"Camila", lastName:"Muguerza"};
+            console.log(length);
+            console.log(lastName);
+            console.log(x);
+
+            var y = "Hi" + " "+ lastName;
+            console.log(y);
+           </script>
+            </p>
+    </li>
+    <li>
+        <h3>Variable Undefined</h3>
+        <p>See on console the types and undefined variables</p>
+        <script>
+            var f;
+            console.log(f);
+
+            f = 5;
+            console.log(typeof(f));
+
+            f = "Cami";
+            console.log(typeof(f));
+           </script>
+            </p>
+    </li>
+    <li>
+        <h3>Boolean values</h3>
+        <li>
+            <h4>Numbers</h4>
+        <p>See on console boolean values results</p>
+        <script>
+            var g = 5;
+            var h = 2;
+            var i = 5;
+
+            console.log(g==i);
+            console.log(g==h);
+           </script>
+            </p></li>
+            <li>
+                <h4>Arrays</h4>
+                <p>See the examples of boolean values results of adding numbers to a script</p>
+                <script>
+                    var x1 = 5 + 5;
+                    var x2 = "10" + 5;
+                    var x3 = 5 + 5 + "10" + 5;
+                    var x4 = "hello" + 5;
+
+                    document.write(x1 + "<br>" + x2 + "<br>" + x3);
+                    document.write("<br>");
+                    document.write(typeof(x1));
+                    document.write("<br>");
+                    document.write(typeof(x2));
+                    document.write("<br>");
+                    document.write(typeof(x3));
+                    document.write("<br>");
+                    document.write(typeof(x4));
+                   </script>
+    </li>
+</ul>
+</body>
+</html>
